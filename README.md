@@ -154,7 +154,7 @@ pip install pyserial matplotlib numpy
 </td>
 <td>
 
-<img width="660" height="518" alt="Screenshot 2025-10-10 193641-pica" src="https://github.com/user-attachments/assets/50756734-310c-4f95-ac56-9e935f25dbe7" />
+<img width="670" height="518" alt="Screenshot 2025-10-10 193641-pica" src="https://github.com/user-attachments/assets/50756734-310c-4f95-ac56-9e935f25dbe7" />
 
 *Real-time ECG waveform and heart rate (BPM) displayed on the Python GUI.*
 
