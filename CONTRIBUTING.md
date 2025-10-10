@@ -7,7 +7,7 @@ Thank you for your interest in contributing to this project! Your contributions 
 1. **Fork the repository** to your GitHub account.
 2. **Clone your fork** locally:
    ```bash
-   git clone https://github.com/your-username/repo-name.git
+   git clone https://github.com/your-username/ECG-CaseStudy.git
 
 3. **Create a new branch** for your feature or bugfix:
 
