@@ -71,7 +71,7 @@ It also includes a **low heart rate alarm** that triggers a warning beep when th
 
 - **Python 3.8+**
 - **Pip** (Python package manager)
-
+- **Keil uVision5** (STM32 Devvelopment Environment)
 ---
 
 ## Install Required Dependencies
@@ -104,21 +104,29 @@ pip install pyserial matplotlib numpy
 
 1. Ensure your STM32 + AD8232 + HC-05 setup is powered and paired via Bluetooth.
 
-2. Save the Python file below as **`visualize.py`**.
+2. Open Keil uVision5 -> Create new project -> Select **STM32F401CCU6** -> CMSIS:CORE,Device:Startup -> Finish.
 
-3. Open a terminal in the same folder and run:
+3. Save the C file below as **ecg.c** in project directory.
+
+4. Flash the board, build the file and load it into the STM32.
+
+5. Save the Python file below as **`visualize.py`**.
+
+6. Press the Reset button present in the STM32.
+
+7. Open a terminal in the same folder and run:
 
    ```bash
    python visualize.py
    ```
 
-4. In the GUI:
+8. In the GUI:
 
    * Enter your correct **Serial Port** (e.g., `COM4`)
    * Click **Connect**
    * The **live ECG waveform** will appear, and **BPM** will be displayed on the top-right.
 
-5. If the **heart rate** drops below 30 BPM (configurable), a **warning beep** will sound.
+9. If the **heart rate** drops below 30 BPM (configurable), a **warning beep** will sound.
 
 ---
 
@@ -154,7 +162,7 @@ pip install pyserial matplotlib numpy
 </td>
 <td>
 
-<img width="670" height="518" alt="Screenshot 2025-10-10 193641-pica" src="https://github.com/user-attachments/assets/50756734-310c-4f95-ac56-9e935f25dbe7" />
+<img width="700" height="350" alt="ECG-reading" src="https://github.com/user-attachments/assets/a451e758-3823-4972-aa01-facc7e73359e" />
 
 *Real-time ECG waveform and heart rate (BPM) displayed on the Python GUI.*
 
