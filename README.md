@@ -155,7 +155,7 @@ pip install pyserial matplotlib numpy
 <tr>
 <td>
 
-<img height="290" alt="Wireless ECG Monitoring System with Live Graph Display" src="https://github.com/user-attachments/assets/1c2961ec-e36a-4982-ae14-88e501447ca2" />
+<img height="260" alt="Wireless ECG Monitoring System with Live Graph Display" src="https://github.com/user-attachments/assets/1c2961ec-e36a-4982-ae14-88e501447ca2" />
 
 *STM32F401CCU6 connected with AD8232 ECG module and HC-05 Bluetooth module.*
 
