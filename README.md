@@ -5,8 +5,6 @@ This Python application provides a **real-time ECG waveform visualization** and 
 The GUI continuously reads the ECG ADC data and BPM values over serial communication, plots them dynamically using **Matplotlib**, and displays the **heart rate (BPM)** numerically.  
 It also includes a **low heart rate alarm** that triggers a warning beep when the BPM falls below a threshold.
 
----
-
 ## Features
 
 - Real-time ECG waveform plotting  
@@ -16,8 +14,6 @@ It also includes a **low heart rate alarm** that triggers a warning beep when th
 - Low BPM audio alarm  
 - Connect/Disconnect controls  
 - Smooth animated graph using Matplotlib and Tkinter
-
----
 
 ## Hardware Setup Overview
 
@@ -30,7 +26,6 @@ It also includes a **low heart rate alarm** that triggers a warning beep when th
 
 - The STM32 code sends ECG analog readings and BPM values via Bluetooth.  
 - The Python script reads these values, displays them as a waveform, and updates the BPM in real time.
----
 
 ## Hardware Connection Diagram
 
@@ -72,7 +67,6 @@ It also includes a **low heart rate alarm** that triggers a warning beep when th
 - **Python 3.8+**
 - **Pip** (Python package manager)
 - **Keil uVision5** (STM32 Devvelopment Environment)
----
 
 ## Install Required Dependencies
 
@@ -83,8 +77,6 @@ pip install pyserial matplotlib numpy
 ````
 
 > `winsound` and `tkinter` come preinstalled with Python on Windows.
-
----
 
 ## Find Your Bluetooth COM Port (HC-05)
 
@@ -97,8 +89,6 @@ pip install pyserial matplotlib numpy
    ```python
    SERIAL_PORT = 'COM4'
    ```
-
----
 
 ## How to Run the Program
 
@@ -128,8 +118,6 @@ pip install pyserial matplotlib numpy
 
 9. If the **heart rate** drops below 30 BPM (configurable), a **warning beep** will sound.
 
----
-
 ## Notes
 
 * Ensure that the **STM32 UART baud rate** matches the `BAUD_RATE` set in Python (`9600` by default).
@@ -147,7 +135,6 @@ pip install pyserial matplotlib numpy
   ```python
   MAX_POINTS = 100
   ```
----
 
 ## Hardware Setup & Python GUI Output
 
@@ -177,4 +164,3 @@ pip install pyserial matplotlib numpy
 * [@Shyam Sundar Raju](https://github.com/Shyam-Sundar-Raju)
 * [@Dwarakesh V](https://github.com/Dwarakesh-V)
 * [@Amarthya Sujai](https://github.com/Amarthya-afk)
----
